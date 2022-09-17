@@ -1,18 +1,20 @@
 ---[[ keys.lua ]]
 local map = vim.api.nvim_set_keymap
 
+-- statusline config 
+local statusline = require('statusline')
+statusline.tabline = false
+statusline.lsp_diagnostics = false
+statusline.ale_diagnostics = true
+vim.o.laststatus=3
 
 -- Toggle nvim-tree
 vim.g.NERDTreeShowHidden = 1
 vim.g.NerDTreeShowBookmarks = 1
-map('n', '<F3>', ':NERDTreeToggle<CR>', {noremap = true})
+map('n', '<F3>', ':NvimTreeToggle<CR>', {noremap = true})
 -- Copy & Paste Config
 map('n', '<C-p>','"+p',{noremap = true})
 map('n', '<C-y>','"+y',{noremap = true})
---statuslines
---vim.opt.vimfiler_force_overwrite_statusline = 0
---vim.opt.vimshell_force_overwrite_statusline = 0
---vim.opt.unite_force_overwrite_statusline = 0
 
 -- telescope
 map('n','<leader>f',':Telescope<CR>',{})
@@ -33,7 +35,7 @@ db.custom_center = {
     shortcut = 'SPC f f'},
     {icon = '  ',
     desc ='File Browser                            ',
-    action =  'NERDTreeToggle',
+    action =  'NvimTreeToggle',
     shortcut = 'SPC f b'},
     {icon = '  ',
     desc = 'Find  word                              ',

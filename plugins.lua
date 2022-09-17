@@ -2,13 +2,17 @@ return require('packer').startup(function(use)
         use 'wbthomason/packer.nvim'
         use {'neoclide/coc.nvim', branch='release'}
         use 'ervandew/supertab'
-        use 'itchyny/lightline.vim'
         use 'ryanoasis/vim-devicons' 
         use 'tomlion/vim-solidity'
-        use 'jistr/vim-nerdtree-tabs'
         use 'dstein64/vim-startuptime'
+        use {
+                'kyazdani42/nvim-tree.lua',
+                requires = {
+                'kyazdani42/nvim-web-devicons', -- optional, for file icons
+                },
+                tag = 'nightly' -- optional, updated every week. (see issue #1193)
+        }
         use 'lewis6991/impatient.nvim'
-        use 'preservim/nerdtree'
         use 'morhetz/gruvbox'
         use {
                 'nvim-telescope/telescope.nvim', tag = '0.1.0',
@@ -23,7 +27,6 @@ return require('packer').startup(function(use)
                 })
         end
         })
-        use 'mengelbrecht/lightline-bufferline'
         use {'glepnir/dashboard-nvim'}
         use {
                 "lukas-reineke/indent-blankline.nvim",
@@ -32,5 +35,9 @@ return require('packer').startup(function(use)
                 }
         end
         }
-
+        use 'beauwilliams/statusline.lua'
+        use {
+                "williamboman/nvim-lsp-installer",
+                "neovim/nvim-lspconfig",
+        }
 end)

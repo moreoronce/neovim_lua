@@ -1,4 +1,5 @@
 require('impatient')
+require("nvim-tree").setup()
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "UTF-8"
 vim.wo.number = true
