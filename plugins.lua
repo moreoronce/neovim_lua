@@ -7,8 +7,6 @@ return require('packer').startup(function(use)
         use 'tomlion/vim-solidity'
         use 'jistr/vim-nerdtree-tabs'
         use 'dstein64/vim-startuptime'
-        use 'mhinz/vim-startify'
---        use {'junegunn/fzf', run='./install --bin, }
         use 'lewis6991/impatient.nvim'
         use 'preservim/nerdtree'
         use 'morhetz/gruvbox'
@@ -26,4 +24,13 @@ return require('packer').startup(function(use)
         end
         })
         use 'mengelbrecht/lightline-bufferline'
+        use {'glepnir/dashboard-nvim'}
+        use {
+                "lukas-reineke/indent-blankline.nvim",
+                config = function()
+                require("indent_blankline").setup { filetype_exclude = { "dashboard" }
+                }
+        end
+        }
+
 end)
