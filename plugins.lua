@@ -1,7 +1,6 @@
 return require('packer').startup(function(use)
         use 'wbthomason/packer.nvim'
         use {'neoclide/coc.nvim', branch='release'}
-        use 'ervandew/supertab'
         use 'ryanoasis/vim-devicons' 
         use 'tomlion/vim-solidity'
         use 'dstein64/vim-startuptime'
@@ -36,8 +35,4 @@ return require('packer').startup(function(use)
         end
         }
         use 'beauwilliams/statusline.lua'
-        use {
-                "williamboman/nvim-lsp-installer",
-                "neovim/nvim-lspconfig",
-        }
 end)

@@ -9,8 +9,6 @@ statusline.ale_diagnostics = true
 vim.o.laststatus=3
 
 -- Toggle nvim-tree
-vim.g.NERDTreeShowHidden = 1
-vim.g.NerDTreeShowBookmarks = 1
 map('n', '<F3>', ':NvimTreeToggle<CR>', {noremap = true})
 -- Copy & Paste Config
 map('n', '<C-p>','"+p',{noremap = true})
