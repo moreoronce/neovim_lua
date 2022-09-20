@@ -3,7 +3,8 @@ require("nvim-tree").setup()
 require('plugin-config/telescope')
 require('plugin-config/dashboard')
 require('plugin-config/statusline')
-require('plugin-config/statusline')
+require('plugin-config/nvimtree')
+vim.cmd('source plugin-config/coc.vim')
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "UTF-8"
 vim.wo.number = true
