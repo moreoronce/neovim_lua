@@ -13,10 +13,7 @@ map('n', '<F3>', ':NvimTreeToggle<CR>', {noremap = true})
 -- Copy & Paste Config
 map('n', '<C-p>','"+p',{noremap = true})
 map('n', '<C-y>','"+y',{noremap = true})
-
--- telescope
-map('n','<leader>f',':Telescope<CR>',{})
-
+-- Dashboard
 local db = require('dashboard')
 db.custom_center = {
     {icon = '  ',

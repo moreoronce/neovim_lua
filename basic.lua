@@ -1,5 +1,6 @@
 require('impatient')
 require("nvim-tree").setup()
+require('plugin-config/telescope')
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "UTF-8"
 vim.wo.number = true
@@ -58,18 +59,3 @@ vim.o.termguicolors = true
 vim.o.wildmenu = true
 -- Windows Clipobard
 vim.opt.clipboard = "unnamedplus"
-
--- mapping
-local map = vim.api.nvim_set_keymap
-local opt = {
-        noremap = true,
-        silent = true
-}
-map('n','<leader>sa','ggVG',{})
-map('n','<F1>','gg',{})
-map('n','<F2>','G',{})
-map('n','<F4>',':noh<CR>',{})
-map("v", "<", "<gv", opt)
-map("v", ">", ">gv", opt)
-map("n", "<C-j>", "4j", opt)
-map("n", "<C-k>", "4k", opt)
