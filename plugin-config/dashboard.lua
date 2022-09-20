@@ -1,18 +1,3 @@
----[[ keys.lua ]]
-local map = vim.api.nvim_set_keymap
-
--- statusline config 
-local statusline = require('statusline')
-statusline.tabline = false
-statusline.lsp_diagnostics = false
-statusline.ale_diagnostics = true
-vim.o.laststatus=3
-
--- Toggle nvim-tree
-map('n', '<F3>', ':NvimTreeToggle<CR>', {noremap = true})
--- Copy & Paste Config
-map('n', '<C-p>','"+p',{noremap = true})
-map('n', '<C-y>','"+y',{noremap = true})
 -- Dashboard
 local db = require('dashboard')
 db.custom_center = {

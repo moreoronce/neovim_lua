@@ -37,3 +37,6 @@ map('n', '<A-l>', '<C-w>l', opt)
 map('n', 'sc', '<C-w>c', opt)
 -- 关闭其他窗口 (close other)
 map('n', 'so', '<C-w>o', opt)
+-- Copy & Paste Config
+map('n', '<C-p>','"+p',{noremap = true})
+map('n', '<C-y>','"+y',{noremap = true})
