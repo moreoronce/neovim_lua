@@ -34,7 +34,7 @@ require("telescope").setup {
 
 
 --按键设置
-map('n', '<Leader>f', ':Telescope find_files<CR>', opt)
---map("n", "<leader>fg", "lua require('telescope.builtin').live_grep()<cr>", "")
---map("n", "<leader>fb", "lua require('telescope.builtin').buffers()<cr>", "")
---map("n", "<leader>fh", "lua require('telescope.builtin').help_tags()<cr>", "")
+map('n', '<Leader>ff', ':Telescope find_files<CR>', opt)
+map("n", "<leader>fg", ':Telescop live_grep<CR>', opt)
+map("n", "<leader>fb", ':Telescop buffers<CR>', opt)
+map("n", "<leader>fh", ':Telescop help_tags<CR>', opt)

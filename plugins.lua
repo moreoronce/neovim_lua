@@ -1,6 +1,7 @@
 return require('packer').startup(function(use)
         use 'wbthomason/packer.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
+        use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
         use {'neoclide/coc.nvim', branch='release'}
         use 'ryanoasis/vim-devicons' 
         use 'tomlion/vim-solidity'

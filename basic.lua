@@ -1,4 +1,13 @@
 vim.g.mapleader = ","
+
+-- required lua module
+require('impatient')
+require('plugin-config/statusline')
+require("nvim-tree").setup()
+require('plugin-config/telescope')
+require('plugin-config/dashboard')
+require('plugin-config/nvimtree')
+
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "UTF-8"
 vim.wo.number = true
@@ -57,9 +66,3 @@ vim.o.wildmenu = true
 -- Windows Clipobard
 vim.opt.clipboard = "unnamedplus"
 
-require('impatient')
-require('plugin-config/statusline')
-require("nvim-tree").setup()
-require('plugin-config/telescope')
-require('plugin-config/dashboard')
-require('plugin-config/nvimtree')
