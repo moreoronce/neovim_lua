@@ -1,10 +1,4 @@
-require('impatient')
-require("nvim-tree").setup()
-require('plugin-config/telescope')
-require('plugin-config/dashboard')
-require('plugin-config/statusline')
-require('plugin-config/nvimtree')
-vim.cmd('source plugin-config/coc.vim')
+vim.g.mapleader = ","
 vim.g.encoding = "UTF-8"
 vim.o.fileencoding = "UTF-8"
 vim.wo.number = true
@@ -12,7 +6,6 @@ vim.o.tabstop = 4
 vim.bo.tabstop = 4
 vim.o.softtabstop = 4
 vim.o.shiftround = true
-vim.g.mapleader = ","
 
 vim.o.expandtab = true
 vim.bo.expandtab = true
@@ -63,3 +56,10 @@ vim.o.termguicolors = true
 vim.o.wildmenu = true
 -- Windows Clipobard
 vim.opt.clipboard = "unnamedplus"
+
+require('impatient')
+require('plugin-config/statusline')
+require("nvim-tree").setup()
+require('plugin-config/telescope')
+require('plugin-config/dashboard')
+require('plugin-config/nvimtree')
