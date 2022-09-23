@@ -133,4 +133,10 @@ vim.cmd([[
     command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
 ]])
 
+require('utils').define_augroups({_coc = {
+    {'filetype', 'typescript,json', 'setl', "formatexpr=CocAction('formatselected')"},
+    {'User', 'CocQuickfixChange', ':CocList', '--normal', 'quickfix'},
+    {  'user','cocjumpplaceholder','call',"CocActionAsync('showSignatureHelp')"},
+}})
+
 register_mappings(mappings, { silent = true, noremap = true })
