@@ -20,11 +20,7 @@ local function register_mappings(mappings, default_options)
 end
 
 g.coc_global_extensions = {
-   'coc-css',
-   'coc-cssmodules',
    'coc-diagnostic',
-   'coc-elixir',
-   'coc-emmet',
    'coc-eslint',
    'coc-flutter',
    'coc-git',
@@ -35,21 +31,17 @@ g.coc_global_extensions = {
    'coc-prettier',
    'coc-project',
    'coc-pyright',
-   'coc-rls',
    'coc-sh',
    'coc-snippets',
-   'coc-sourcekit',
    'coc-styled-components',
    'coc-tailwindcss',
    'coc-tslint-plugin',
    'coc-tsserver',
    'coc-vimlsp',
-   'coc-webpack',
    'coc-xml',
    'coc-yaml',
    'coc-yank',
    'coc-lists',
-    -- 'coc-rust-analyzer'
 }
 
 function _G.check_back_space()
