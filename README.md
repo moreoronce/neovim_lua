@@ -1,3 +1,3 @@
 # neovim_lua
 
-https://isfalse.pro/tags/neovim
+https://isfalse.pro/tag/neovim
